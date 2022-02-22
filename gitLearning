@@ -1,0 +1,77 @@
+git config --global user.name archana
+git config --global user.email a@a.com
+
+//initialized git repo
+git init
+
+//show all hidden folder
+ls -lart
+
+//shoe git status
+git status
+
+//add your file in stage area
+git add enterfileName
+
+//save your file to git(in initial stage for tracking your file you must have to commit)
+git commit -m "add your msg"
+
+//make new file
+touch <filename>
+
+//for adding all file in stage area
+git add -A
+
+//match to the last commit(changes will be gone)
+git checkout <file name>
+
+//changes will be gone from all the files
+git checkout -f
+
+//git log show what you committed
+git log
+
+//number of commit you want to see(here last one commit will be shown
+git log -p -1
+
+//compare working directory to staging area file and show the changes
+git diff
+
+//compare last commit file to stage area file
+git diff --stage
+
+//skipped staging and comiit all the file
+git commit -a -m "msg"
+
+//remove file from staging area and working directory
+git rm <file name>
+
+//remove file from staging area only (not from working directory)
+git rm --cached <filename>
+
+//give status in summarized form
+git status -s
+
+// .gitignore ignore the file which are are written in .gitignore
+  *.log           //ignore all the file with extension .log
+  newhtml/        //ignore all the files inside newhtml
+  /abc.log        //ignore that file in same directory only 
+  
+//create new branch
+git branch <branchName>  
+
+//show list of branch
+git branch
+
+//switch the branch
+git checkout <newbranch name>   
+
+//merge the branch to the master branch
+git merge <branch name>
+
+//create new branch and also switch to the new created branch 
+git checkout -b <new branch name>
+
+git push origin <Branch Name>
+
+
